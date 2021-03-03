@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT revisoes (veiculo+)>
+<!ATTLIST veiculo placa CDATA #REQUIRED>
+<!ATTLIST veiculo loja CDATA (Itu)>
+<!ATTLIST veiculo combustivel CDATA (flex|gasolina|diesel) #REQUIRED>
+<!ATTLIST veiculo zerokm CDATA (Sim|Não) #REQUIRED>
+<!ELEMENT veiculo (descricao?, caracteristica+)>
+<!ELEMENT caracteristica (cor, km?, foto+)>
+<!ELEMENT cor (#PCDATA)>
+<!ELEMENT km (#PCDATA)>
+<!ELEMENT foto (#EMPTY)>
+<!ELEMENT descricao (#PCDATA)>
